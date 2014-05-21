@@ -1,17 +1,22 @@
 <html>
     <head>
-        <script>
-
-            window.open("http://google.com");
-        </script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     </head>
-
-
     <body>
         <button id="clickMe"> Click Me </button>
-
-
     </body>
+        <script>
+            $(document).ready(function(){
+                var openPopup = function(){
+                    window.open("http://google.com");
+                };
+                $("#clickMe").click(function(){
 
+                    setTimeout(function(){
 
+                        openPopup();
+                    }, 1000);
+                });
+            });
+        </script>
 </html>

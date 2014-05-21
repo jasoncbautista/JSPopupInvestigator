@@ -8,7 +8,7 @@
         <script>
             $(document).ready(function(){
                 var openPopup = function(){
-                    window.open("http://google.com");
+                    window.open("http://google.com", name, 'height=200,width=150');
                 };
                 $("#clickMe").click(function(){
 
@@ -17,6 +17,7 @@
                         openPopup();
                     }, 1000);
                 });
+
             });
         </script>
 </html>

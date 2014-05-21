@@ -14,8 +14,11 @@
 
                     setTimeout(function(){
 
-                        openPopup();
-                    }, 1000);
+                            //openPopup(); // This works for some reason..
+                        setTimeout(function(){
+                            openPopup(); // This doesn't work
+                        }, 100);
+                    }, 100);
                 });
 
 
@@ -24,8 +27,15 @@
                 }, 10);
 
                 $(document.body).mousemove(function(){
-                    openPopup();
+                    //openPopup();
                 });
+
+
+                /*
+                $.ajax({
+                    }.done(function(){
+                });
+                */
 
             });
         </script>
